@@ -1,8 +1,8 @@
 $(function(){
 
 	var note = $('#note'),
-		ts = new Date(2016, 5, 29);
-		newYear = true;
+		ts = new Date(2016, 4, 20);
+		wedDay = true;
 
 	if((new Date()) > ts){
 		// The new year is here! Count towards something else.
@@ -26,7 +26,7 @@ $(function(){
 				message += "left until the wedding!";
 			}
 			else {
-				message += "left to 10 days from now!";
+				message += "left to 10 days from the wedding!";
 			}
 
 			note.html(message);

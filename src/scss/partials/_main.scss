@@ -56,13 +56,13 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
-$lightest: #ffffff;
-$darkest: #212121;
+$darkest: #6A0000;
+$lightest: #FDF9F3;
 $black: #000000;
 
 body {
     font: 16px/1.5 'Raleway', Helvetica, Helvetica Neue, Arial, sans-serif;
-    background-color: $darkest;
+    background-color: $lightest;
 }
 
 .wrapper {
@@ -76,9 +76,9 @@ html, body {
     margin: 0;
 }
 h1 {
-    font-size: 2em;
+    font-size: 4em;
     margin-top: 0;
-    font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
+    font-family: 'Tangerine', cursive;
     font-weight: 700;
 }
 
@@ -90,7 +90,7 @@ h1 {
 /* =Header */
 .header-container {
     text-align: center;
-    color: $lightest;
+    color: $darkest;
     .wrapper {
         padding-top: 120px;
         z-index: 2;
@@ -125,6 +125,7 @@ h1 {
     }
 }
 
+
 /* =Navigation */
 nav {
     display: none;
@@ -139,7 +140,7 @@ nav {
         line-height: 25px;
         position: relative;
         padding-right: 20px;
-        color: $lightest;
+        color: $darkest;
         text-decoration: none;
         &:hover {
             .nav-label {
@@ -171,7 +172,7 @@ nav {
     }
     &.is-dark {
         a {
-            color: $darkest;
+            color: $lightest;
         }
         .nav-dot {
             background-color: transparentize($black,.5);
@@ -179,7 +180,7 @@ nav {
     }
     &.is-light {
         a {
-            color: $lightest;
+            color: $darkest;
         }
         .nav-dot {
             background-color: transparentize($lightest,.5);
@@ -201,7 +202,7 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 40px;
-    border: 3px $lightest solid;
+    border: 3px $darkest solid;
     font-size: 13px;
     font-weight: bold;
     font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
@@ -217,7 +218,7 @@ p {
     height: 100vh;
 }
 .slide {
-    color: $lightest;
+    color: $darkest;
     position: relative;
     .wrapper {
         padding-top: 30px;
@@ -239,13 +240,13 @@ p {
     }
     &#slide03 {
         .button {
-            border-color: $lightest;
-            color: $darkest;
+            border-color: $darkest;
+            color: $lightest;
             background-color: rgba(255,255,255,0.9);
             &:hover {
-                border-color: $darkest;
-                background-color: $darkest;
-                color: $lightest;
+                border-color: $lightest;
+                background-color: $lightest;
+                color: $darkest;
             }
         }
         .wrapper {
@@ -258,23 +259,23 @@ p {
 }
 .button {
     text-decoration: none;
-    color: $lightest;
+    color: $darkest;
     border: 1px transparentize($lightest,.3) solid;
     padding: 8px 15px;
     margin-top: 15px;
     display: inline-block;
     position: relative;
     &:hover {
-        border-color: $lightest;
-        background-color: $lightest;
+        border-color: $darkest;
+        background-color: $darkest;
         color: $black;
     }
 }
 
 /* =Content Block */
 .content-block {
-    background-color: $darkest;
-    color: transparentize($lightest,.1);
+    background-color: $lightest;
+    color: transparentize($darkest,.1);
     .wrapper {
         padding: 30px 0;
         text-align: center;
@@ -330,11 +331,6 @@ p {
     }
     &.slideInUp2{transition-delay: 0.2s;}
     &.slideInUp3{transition-delay: 0.4s;}
-}
-
-#iht_logo {
-    width: 100px;
-    margin-bottom: 30px;
 }
 
 
@@ -395,7 +391,7 @@ p {
         &#slide01,
         &#slide02,
         &#slide03 {
-            color: $darkest;
+            color: $lightest;
             .wrapper {
                 top: 20%;
                 text-align: center;
@@ -405,10 +401,10 @@ p {
             }
         }
         &#slide01 {
-            color: $lightest;
+            color: $darkest;
         }
         &#slide02 {
-            color: $lightest;
+            color: $darkest;
             .wrapper {
                 top: auto;
                 bottom: 40%;
@@ -434,7 +430,7 @@ p {
             .button {
                 border-color: transparentize($black,.3);
                 background-color: transparent;
-                color: $darkest;
+                color: $lightest;
             }
             .bcg {
                 opacity: 1;
