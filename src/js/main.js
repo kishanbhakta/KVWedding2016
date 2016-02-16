@@ -18,13 +18,13 @@
 		// SCENE 1
 		// create scenes for each of the headers
 		headers.forEach(function (header, index) {
-		    
+
 		    // number for highlighting scenes
 			var num = index+1;
 
 		    // make scene
 		    var headerScene = new ScrollMagic.Scene({
-		        triggerElement: header, // trigger CSS animation when header is in the middle of the viewport 
+		        triggerElement: header, // trigger CSS animation when header is in the middle of the viewport
 		        offset: -95 // offset triggers the animation 95 earlier then middle of the viewport, adjust to your liking
 		    })
 		    .setClassToggle('#slide0'+num, 'is-active') // set class to active slide
@@ -35,13 +35,13 @@
 	    // SCENE 2
 	    // change color of the nav for dark content blocks
 	    breakSections.forEach(function (breakSection, index) {
-		    
+
 		    // number for highlighting scenes
 			var breakID = $(breakSection).attr('id');
 
 		    // make scene
 		    var breakScene = new ScrollMagic.Scene({
-		        triggerElement: breakSection, // trigger CSS animation when header is in the middle of the viewport 
+		        triggerElement: breakSection, // trigger CSS animation when header is in the middle of the viewport
 		        triggerHook: 0.75
 		    })
 		    .setClassToggle('#'+breakID, 'is-active') // set class to active slide
@@ -71,7 +71,7 @@
 			var $bcg = $(slide).find('.bcg');
 
 			var slideParallaxScene = new ScrollMagic.Scene({
-		        triggerElement: slide, 
+		        triggerElement: slide,
 		        triggerHook: 1,
 		        duration: "100%"
 		    })
@@ -90,7 +90,7 @@
 	    	.to($('#intro'), 0.7, {autoAlpha: 0.5, ease:Power1.easeNone}, '-=1.4');
 
 		var introScene = new ScrollMagic.Scene({
-	        triggerElement: '#intro', 
+	        triggerElement: '#intro',
 	        triggerHook: 0,
 	        duration: "100%"
 	    })
