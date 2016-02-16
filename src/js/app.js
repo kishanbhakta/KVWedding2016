@@ -2,14 +2,14 @@
   'use strict';
   var app = angular
   .module('myApp', [
-    'ui.router'
+    'ui.router';
   ]);
 
   app.config(['$stateProvider', '$urlRouterProvider',
   function ($stateProvider, $urlRouterProvider) {
     $stateProvider
-    .state('insta' ,{
-      url: '/insta'
+    .state('home' ,{
+      url: '/',
       templateUrl : 'templates/insta.tpl.html',
       controller: 'InstaCtrl'
     });
