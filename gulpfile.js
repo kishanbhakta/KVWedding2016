@@ -6,6 +6,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifyCss = require('gulp-minify-css'),
     rename = require("gulp-rename");
+    server = require('gulp-server-livereload');
+
 
 // Compile Sass to css and place it in css/styles.css
 gulp.task('styles', function() {
@@ -47,5 +49,14 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('css'));
 });
 
+//Webserver Livereloader
+gulp.task('webserver', function() {
+  return gulp.src('app')
+    .pipe(server({
+      livereload: true,
+      // open: true // Uncomment if you want it to open the project for you
+    }));
+});
+
 // All tasks together
-gulp.task('start', ['styles','compress', 'jshint', 'watch']);
+gulp.task('start', ['styles','compress', 'jshint', 'watch', 'webserver']);

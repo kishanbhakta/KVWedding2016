@@ -140,7 +140,7 @@ nav {
         line-height: 25px;
         position: relative;
         padding-right: 20px;
-        color: $darkest;
+        color: $black;
         text-decoration: none;
         &:hover {
             .nav-label {
@@ -157,7 +157,7 @@ nav {
         position: absolute;
         right: 0;
         top: 50%;
-        background-color: transparentize($lightest,.1);
+        background-color: transparentize($darkest,.1);
         -webkit-border-radius: 100%;
         border-radius: 100%;
         transform: translateY(-50%);
@@ -172,18 +172,18 @@ nav {
     }
     &.is-dark {
         a {
-            color: $lightest;
+            color: $black;
         }
         .nav-dot {
-            background-color: transparentize($black,.5);
+            background-color: transparentize($darkest,.5);
         }
     }
     &.is-light {
         a {
-            color: $darkest;
+            color: $black;
         }
         .nav-dot {
-            background-color: transparentize($lightest,.5);
+            background-color: transparentize($darkest,.5);
         }
     }
     ul {
@@ -196,14 +196,14 @@ nav {
     }
 }
 .scroll-hint {
-    color: $darkest;
+    color: $black;
     position: absolute;
     bottom: 30px;
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 40px;
     border: 3px $darkest solid;
-    font-size: 13px;
+    font-size: 25px;
     font-weight: bold;
     font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
     background-color: rgba(255,255,255,0.9);
