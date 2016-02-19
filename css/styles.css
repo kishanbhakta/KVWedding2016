@@ -205,7 +205,7 @@ html, body {
   margin: 0; }
 
 h1 {
-  font-size: 4em;
+  font-size: 3em;
   margin-top: 0px;
   font-family: 'Tangerine', cursive;
   font-weight: 700; }
@@ -218,7 +218,7 @@ h1 {
   text-align: center;
   color: #6A0000; }
   .header-container .wrapper {
-    padding-top: 120px;
+    padding-top: 0;
     z-index: 2;
     position: relative; }
 
@@ -259,7 +259,7 @@ nav {
     line-height: 25px;
     position: relative;
     padding-right: 20px;
-    color: #6A0000;
+    color: #000000;
     text-decoration: none; }
     nav a:hover .nav-label {
       -webkit-transform: translateX(0);
@@ -273,7 +273,7 @@ nav {
     position: absolute;
     right: 0;
     top: 50%;
-    background-color: rgba(253, 249, 243, 0.9);
+    background-color: rgba(106, 0, 0, 0.9);
     border-radius: 100%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -288,13 +288,13 @@ nav {
     -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
             transition: all 0.2s cubic-bezier(.17, .67, .83, .67); }
   nav.is-dark a {
-    color: #FDF9F3; }
+    color: #000000; }
   nav.is-dark .nav-dot {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(106, 0, 0, 0.5); }
   nav.is-light a {
-    color: #6A0000; }
+    color: #000000; }
   nav.is-light .nav-dot {
-    background-color: rgba(253, 249, 243, 0.5); }
+    background-color: rgba(106, 0, 0, 0.5); }
   nav ul {
     margin: 0;
     padding: 0; }
@@ -303,15 +303,15 @@ nav {
     list-style: none; }
 
 .scroll-hint {
-  color: #6A0000;
+  color: #000000;
   position: absolute;
   bottom: 30px;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  padding: 10px 40px;
+  padding: 0px 10px;
   border: 3px #6A0000 solid;
-  font-size: 13px;
+  font-size: 25px;
   font-weight: bold;
   font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
   background-color: rgba(255, 255, 255, 0.9);

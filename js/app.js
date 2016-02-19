@@ -1,1 +1,1 @@
-!function(){"use strict";var t=angular.module("myApp",["ui.router"]);t.config(["$stateProvider","$urlRouterProvider",function(t,r){t.state("home",{templateUrl:"templates/insta.tpl.html",controller:"InstaCtrl"})}])}();
+!function(){"use strict";var t=angular.module("myApp",["ui.router"]);t.config(["$stateProvider","$urlRouterProvider",function(t,r){t.state("home",{url:"/",templateUrl:"templates/insta.tpl.html",controller:"InstaCtrl"})}])}();

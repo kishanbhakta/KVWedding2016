@@ -6,6 +6,7 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     minifyCss = require('gulp-minify-css'),
     rename = require("gulp-rename");
+    gutil = require('gulp-util');
     server = require('gulp-server-livereload');
 
 
@@ -37,7 +38,7 @@ gulp.task('jshint', function() {
 // Ugligy JS
 gulp.task('compress', function() {
   return gulp.src('src/js/*.js')
-    .pipe(uglify())
+    .pipe(uglify().on('error', gutil.log))
     .pipe(gulp.dest('js'));
 });
 
